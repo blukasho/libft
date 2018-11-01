@@ -1,4 +1,4 @@
-# **************************************************************************** #
+#**************************************************************************** #
 #                                                                              #
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
@@ -6,7 +6,7 @@
 #    By: blukasho <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/10/31 12:56:17 by blukasho          #+#    #+#              #
-#    Updated: 2018/10/31 18:31:09 by blukasho         ###   ########.fr        #
+#*   Updated: 2018/11/01 13:48:29 by blukasho                                 *#
 #                                                                              #
 # **************************************************************************** #
 
@@ -26,11 +26,14 @@ makelib:
 clean:
 	rm -rf $(OBJ)
 
-fclean:
+fclean: clean
 	rm -rf libft.a
 
 re:	fclean all
 
 rm: fclean clean
 
-.PHONY: all makelib clean fclean re rm
+so:
+	gcc -L. -lft -Wall -Werror -Wextra -ansi -std=c99 -I. *.c
+
+.PHONY: all makelib clean fclean re rm so
