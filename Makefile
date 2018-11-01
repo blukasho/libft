@@ -6,7 +6,7 @@
 #    By: blukasho <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/10/31 12:56:17 by blukasho          #+#    #+#              #
-#*   Updated: 2018/11/01 13:48:29 by blukasho                                 *#
+#*   Updated: 2018/11/01 14:09:25 by blukasho                                 *#
 #                                                                              #
 # **************************************************************************** #
 
@@ -32,8 +32,5 @@ fclean: clean
 re:	fclean all
 
 rm: fclean clean
-
-so:
-	gcc -L. -lft -Wall -Werror -Wextra -ansi -std=c99 -I. *.c
 
 .PHONY: all makelib clean fclean re rm so
