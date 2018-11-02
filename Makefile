@@ -6,14 +6,16 @@
 #    By: blukasho <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/10/31 12:56:17 by blukasho          #+#    #+#              #
-#*   Updated: 2018/11/01 14:09:25 by blukasho                                 *#
+#*   Updated: 2018/11/02 08:23:12 by blukasho                                 *#
 #                                                                              #
 # **************************************************************************** #
 
 SRCS = ft_bzero.c ft_memcpy.c ft_memset.c ft_memccpy.c ft_memmove.c \
-	   ft_memchr.c ft_memcmp.c ft_strlen.c ft_strdup.c
+	   ft_memchr.c ft_memcmp.c ft_strlen.c ft_strdup.c ft_strcpy.c
+
 OBJ = ft_bzero.o ft_memset.o ft_memcpy.o ft_memccpy.o ft_memmove.o \
-	  ft_memchr.o ft_memcmp.o ft_strlen.o ft_strdup.o
+	  ft_memchr.o ft_memcmp.o ft_strlen.o ft_strdup.o ft_strcpy.o
+
 GCC = gcc -Wall -Wextra -Werror
 
 all: makelib
@@ -33,4 +35,4 @@ re:	fclean all
 
 rm: fclean clean
 
-.PHONY: all makelib clean fclean re rm so
+.PHONY: all makelib clean fclean re
