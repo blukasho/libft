@@ -6,7 +6,7 @@
 /*   By: blukasho <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/10/30 18:40:24 by blukasho          #+#    #+#             */
-/*   Updated: 2018/11/02 10:38:43 by blukasho                                 */
+/*   Updated: 2018/11/02 11:34:40 by blukasho                                 */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,6 +31,7 @@ char	*ft_strncpy(char *dest, const char *src, size_t n);
 char	*ft_strcpy(char *dest, const char *src);
 char	*ft_strdup(const char *s1);
 
+//size_t	ft_strlcat(char *dest, const char *src, size_t size);
 size_t	ft_strlen(const char *s);
 
 int		ft_memcmp(const void *s1, const void *s2, size_t n);
