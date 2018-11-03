@@ -1,36 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_atoi.c                                          :+:      :+:    :+:   */
+/*   ft_isalpha.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: blukasho <bodik1w@gmail.com>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/11/03 22:42:02 by blukasho          #+#    #+#             */
-/*   Updated: 2018/11/04 00:42:33 by blukasho         ###   ########.fr       */
+/*   Created: 2018/11/04 00:47:04 by blukasho          #+#    #+#             */
+/*   Updated: 2018/11/04 00:59:56 by blukasho         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int		ft_atoi(const char *nptr)
+int		ft_isalpha(int c)
 {
-	long long	res;
-	int			min;
-
-	min = 0;
-	res = 0;
-	while (*nptr)
-	{
-		while (*nptr >= '0' && *nptr <= '9')
-		{
-			if (*(nptr - 1) == '-')
-				min = 1;
-			res = (res * 10) + (*nptr - 48);
-			nptr++;
-		}
-		nptr++;
-	}
-	if (min == 1)
-		res *= -1;
-	return ((int) res);
+	if ((char) c >= 'a' && (char) c <= 'z')
+		return (1024);
+	if ((char) c >= 'A' && (char) c <= 'Z')
+		return (1024);
+	return (0);
 }
