@@ -6,7 +6,7 @@
 /*   By: blukasho <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/10/30 18:40:24 by blukasho          #+#    #+#             */
-/*   Updated: 2018/11/03 11:41:49 by blukasho         ###   ########.fr       */
+/*   Updated: 2018/11/03 19:35:57 by blukasho         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,8 @@ void	*ft_memccpy(void *restrict dst, const void *restrict src, int c, size_t n);
 void	*ft_memcpy(void *restrict dst, const void *restrict stc, size_t n);
 void	*ft_memset(void *b, int c, size_t len);
 
-char	*ft_strstr(const char *havstack, const char *needle);
+char	*ft_strnstr(const char *big, const char *little, size_t len);
+char	*ft_strstr(const char *haystack, const char *needle);
 char	*ft_strrchr(const char *s, int c);
 char	*ft_strchr(const char *src, int c);
 char	*ft_strncat(char *dest, const char *src, size_t n);
@@ -39,5 +40,6 @@ size_t	ft_strlen(const char *s);
 
 int		ft_memcmp(const void *s1, const void *s2, size_t n);
 int		ft_strcmp(const char *s1, const char *s2);
+int		ft_strncmp(const char *s1, const char *s2, size_t n);
 
 #endif

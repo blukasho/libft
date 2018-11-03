@@ -1,21 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strstr.c                                        :+:      :+:    :+:   */
+/*   ft_strncmp.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: blukasho <bodik1w@gmail.com>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/11/03 10:27:33 by blukasho          #+#    #+#             */
-/*   Updated: 2018/11/03 18:55:33 by blukasho         ###   ########.fr       */
+/*   Created: 2018/11/03 15:16:17 by blukasho          #+#    #+#             */
+/*   Updated: 2018/11/03 17:17:21 by blukasho         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strstr(const char *haystack, const char *needle)
+int		ft_strncmp(const char *s1, const char *s2, size_t n)
 {
-	while (*haystack)
-		if (!ft_strcmp(haystack++, needle))
-			return ((char *) haystack);	
-	return (NULL);
+	size_t i;
+
+	i = -1;
+	while (++i < n)
+		if (s1[i] != s2[i])
+			return ((int) s1[i] - s2[i]);
+	return (0);
 }

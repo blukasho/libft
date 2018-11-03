@@ -1,21 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strstr.c                                        :+:      :+:    :+:   */
+/*   ft_strnstr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: blukasho <bodik1w@gmail.com>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/11/03 10:27:33 by blukasho          #+#    #+#             */
-/*   Updated: 2018/11/03 18:55:33 by blukasho         ###   ########.fr       */
+/*   Created: 2018/11/03 12:30:14 by blukasho          #+#    #+#             */
+/*   Updated: 2018/11/03 22:33:00 by blukasho         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-char	*ft_strstr(const char *haystack, const char *needle)
+/*
+** Непонятно как действовать когда искомая строка больше len
+*/
+char	*ft_strnstr(const char *big, const char *little, size_t len)
 {
-	while (*haystack)
-		if (!ft_strcmp(haystack++, needle))
-			return ((char *) haystack);	
+	if (*little == '\0')
+		return ((char *) big);
+	while (--len && *big)
+		if (ft_strncmp(big++, little, ft_strlen(little)) == 0)
+			return ((char *) --big);
 	return (NULL);
 }
