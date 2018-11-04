@@ -1,21 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strnew.c                                        :+:      :+:    :+:   */
+/*   ft_strsub.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: blukasho <bodik1w@gmail.com>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/11/04 10:25:18 by blukasho          #+#    #+#             */
-/*   Updated: 2018/11/04 15:22:34 by blukasho         ###   ########.fr       */
+/*   Created: 2018/11/04 14:53:53 by blukasho          #+#    #+#             */
+/*   Updated: 2018/11/04 15:41:57 by blukasho         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strnew(size_t size)
+char	*ft_strsub(char const *s, unsigned int start, size_t len)
 {
-	char *str;
+	char	*res;
+	size_t	i;
 
-	str = (char *)ft_memalloc(size);
-	return (str);
+	i = -1;
+	res = ft_strnew(len);
+	if (!res)
+		return (NULL);
+	while (++i < len)
+		res[i] = s[start++];
+	return (res);
 }
