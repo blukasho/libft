@@ -6,7 +6,7 @@
 /*   By: blukasho <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/10/30 18:40:24 by blukasho          #+#    #+#             */
-/*   Updated: 2018/11/04 10:44:16 by blukasho         ###   ########.fr       */
+/*   Updated: 2018/11/04 10:57:30 by blukasho         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,7 @@
 #include <string.h>
 #include <stdio.h>
 
+void	ft_strdel(char **ap);
 void	ft_memdel(void **ap);
 void	ft_bzero(void *s, size_t n);
 
