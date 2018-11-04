@@ -6,7 +6,7 @@
 /*   By: blukasho <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/10/30 18:40:24 by blukasho          #+#    #+#             */
-/*   Updated: 2018/11/04 08:37:32 by blukasho         ###   ########.fr       */
+/*   Updated: 2018/11/04 10:22:32 by blukasho         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,7 @@
 #include <string.h>
 #include <stdio.h>
 
+void	ft_memdel(void **ap);
 void	ft_bzero(void *s, size_t n);
 
 void	*ft_memalloc(size_t size);
