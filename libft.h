@@ -6,7 +6,7 @@
 /*   By: blukasho <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/10/30 18:40:24 by blukasho          #+#    #+#             */
-/*   Updated: 2018/11/04 02:04:49 by blukasho         ###   ########.fr       */
+/*   Updated: 2018/11/04 08:37:32 by blukasho         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,7 @@
 
 void	ft_bzero(void *s, size_t n);
 
+void	*ft_memalloc(size_t size);
 void	*ft_memchr(const void *s, int c, size_t n);
 void	*ft_memmove(void *dst, const void *src, size_t len);
 void	*ft_memccpy(void *restrict dst, const void *restrict src, int c, size_t n);
