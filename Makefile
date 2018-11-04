@@ -6,7 +6,7 @@
 #    By: blukasho <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/10/31 12:56:17 by blukasho          #+#    #+#              #
-#*   Updated: 2018/11/04 12:24:02 by blukasho         ###   ########.fr       *#
+#*   Updated: 2018/11/04 12:28:10 by blukasho         ###   ########.fr       *#
 #                                                                              #
 # **************************************************************************** #
 
@@ -44,7 +44,5 @@ fclean: clean
 	rm -rf libft.a
 
 re:	fclean all
-
-rm: fclean clean
 
 .PHONY: all makelib clean fclean re
