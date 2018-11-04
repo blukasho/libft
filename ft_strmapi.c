@@ -1,23 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strmap.c                                        :+:      :+:    :+:   */
+/*   ft_strmapi.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: blukasho <bodik1w@gmail.com>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/11/04 12:17:45 by blukasho          #+#    #+#             */
-/*   Updated: 2018/11/04 12:46:09 by blukasho         ###   ########.fr       */
+/*   Created: 2018/11/04 12:44:07 by blukasho          #+#    #+#             */
+/*   Updated: 2018/11/04 12:49:25 by blukasho         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strmap(char const *s, char (*f) (char))
+char	*ft_strmapi(char const *s, char (*f) (unsigned int, char))
 {
-	char *str;
+	unsigned int	i;
+	char			*res;
 
-	str = ft_strnew(ft_strlen(s));
-	while (*str)
-		*str = f(*s++);
-	return (str);
+	i = -1;
+	res = ft_strnew(ft_strlen(s));
+	while (s[++i])
+		res[i] = f(i,s[i]);
+	return (res);
 }
