@@ -6,7 +6,7 @@
 #    By: blukasho <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/10/31 12:56:17 by blukasho          #+#    #+#              #
-#*   Updated: 2018/11/04 16:56:23 by blukasho         ###   ########.fr       *#
+#*   Updated: 2018/11/04 17:56:00 by blukasho         ###   ########.fr       *#
 #                                                                              #
 # **************************************************************************** #
 
@@ -18,7 +18,7 @@ SRCS = ft_bzero.c ft_memcpy.c ft_memset.c ft_memccpy.c ft_memmove.c \
 	   ft_isprint.c ft_toupper.c ft_tolower.c ft_memalloc.c ft_memdel.c\
 	   ft_strnew.c ft_strdel.c ft_strclr.c ft_striter.c ft_striteri.c\
 	   ft_strmap.c ft_strmapi.c ft_strequ.c ft_strnequ.c ft_strsub.c\
-	   ft_strjoin.c
+	   ft_strjoin.c ft_strtrim.c
 
 OBJ = ft_bzero.o ft_memset.o ft_memcpy.o ft_memccpy.o ft_memmove.o \
 	  ft_memchr.o ft_memcmp.o ft_strlen.o ft_strdup.o ft_strcpy.o \
@@ -28,7 +28,7 @@ OBJ = ft_bzero.o ft_memset.o ft_memcpy.o ft_memccpy.o ft_memmove.o \
 	  ft_isprint.o ft_toupper.o ft_tolower.o ft_memalloc.o ft_memdel.o\
 	  ft_strnew.o ft_strdel.o ft_strclr.o ft_striter.o ft_striteri.o\
 	  ft_strmap.o ft_strmapi.o ft_strequ.o ft_strnequ.o ft_strsub.o\
-	  ft_strjoin.o
+	  ft_strjoin.o ft_strtrim.o
 
 GCC = gcc -Wall -Wextra -Werror
 
