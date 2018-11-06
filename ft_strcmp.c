@@ -6,7 +6,7 @@
 /*   By: blukasho <bodik1w@gmail.com>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/03 11:21:21 by blukasho          #+#    #+#             */
-/*   Updated: 2018/11/04 14:24:48 by blukasho         ###   ########.fr       */
+/*   Updated: 2018/11/06 10:08:30 by blukasho         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,12 +16,8 @@ int		ft_strcmp(const char *s1, const char *s2)
 {
 	long long i;
 
-	i = ft_strlen(s1);
-	while (i >= 0)
-	{
-		if (s1[i] != s2[i])
-			return ((int) s1[i] - s2[i]);
-		i--;
-	}
-	return (0);
+	i = 0;
+	while (s1[i] && (s1[i] == s2[i]))
+		i++;
+	return ((unsigned char) s1[i] - (unsigned char) s2[i]);
 }
