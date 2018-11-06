@@ -6,7 +6,7 @@
 /*   By: blukasho <bodik1w@gmail.com>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/04 11:26:53 by blukasho          #+#    #+#             */
-/*   Updated: 2018/11/04 11:28:41 by blukasho         ###   ########.fr       */
+/*   Updated: 2018/11/06 17:10:21 by blukasho         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 
 void	ft_striter(char *s, void (*f) (char *))
 {
-	while (*s)
-		f(s++);
+	if (s && f)
+		while (*s)
+			f(s++);
 }
