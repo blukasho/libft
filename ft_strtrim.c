@@ -6,7 +6,7 @@
 /*   By: blukasho <bodik1w@gmail.com>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/04 17:18:41 by blukasho          #+#    #+#             */
-/*   Updated: 2018/11/04 18:36:45 by blukasho         ###   ########.fr       */
+/*   Updated: 2018/11/06 18:55:35 by blukasho         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,14 +19,22 @@ char	*ft_strtrim(char const *s)
 	char	*res;
 
 	beg = 0;
-	len = ft_strlen(s);
-	while (s[len - 1] == ' ' || s[len - 1] == '\n' || s[len - 1] == '\t')
-		--len;
-	while (s[beg] == ' ' || s[beg] == '\n' || s[beg] == '\t')
-		++beg;
-	res = ft_strnew(len - beg);
-	if (res)
-		while (len-- > beg)
-			res[len - beg] = s[len];
-	return (res);
+	if (s && 0 < (len = ft_strlen(s)))
+	{
+		while ((s[len - 1] >= 1 && s[len - 1] <= 19) || s[len - 1] == 32)
+			--len;
+		while ((s[beg] >= 1 && s[beg] <= 19) || s[beg] == 32)
+			++beg;
+		res = ft_strnew(len - beg);
+		if (len == 0)
+			return ("\0");
+		if (res)
+		{
+			while (len-- > beg)
+				res[len - beg] = s[len];
+			return (res);
+		}
+		return (res);
+	}
+	return ((char *)s);
 }
