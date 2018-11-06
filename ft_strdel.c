@@ -6,7 +6,7 @@
 /*   By: blukasho <bodik1w@gmail.com>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/04 10:54:45 by blukasho          #+#    #+#             */
-/*   Updated: 2018/11/04 11:05:28 by blukasho         ###   ########.fr       */
+/*   Updated: 2018/11/06 16:51:58 by blukasho         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,9 @@
 
 void	ft_strdel(char **as)
 {
-	free(as);
-	as = NULL;
-		
+	if(as && *as)
+	{
+		free(*as);
+		*as = NULL;
+	}	
 }
