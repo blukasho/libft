@@ -6,7 +6,7 @@
 /*   By: blukasho <bodik1w@gmail.com>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/03 22:42:02 by blukasho          #+#    #+#             */
-/*   Updated: 2018/11/04 00:42:33 by blukasho         ###   ########.fr       */
+/*   Updated: 2018/11/06 14:56:31 by blukasho         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,15 +19,23 @@ int		ft_atoi(const char *nptr)
 
 	min = 0;
 	res = 0;
-	while (*nptr)
+	while ((*nptr >= 1 && *nptr <= 19) || *nptr == 32)
+		nptr++;
+	if (*nptr == '-')
 	{
-		while (*nptr >= '0' && *nptr <= '9')
+		min = 1;
+		nptr++;
+	}
+	while (*nptr >= '0' && *nptr <= '9')
+	{
+		if (9223372036854775807 - res < *nptr - 48)
 		{
-			if (*(nptr - 1) == '-')
-				min = 1;
-			res = (res * 10) + (*nptr - 48);
-			nptr++;
+			if (!min)
+				return (-1);
+			else
+				return (0);
 		}
+		res = (res * 10) + (*nptr - 48);
 		nptr++;
 	}
 	if (min == 1)
