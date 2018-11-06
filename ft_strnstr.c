@@ -6,7 +6,7 @@
 /*   By: blukasho <bodik1w@gmail.com>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/03 12:30:14 by blukasho          #+#    #+#             */
-/*   Updated: 2018/11/03 22:33:00 by blukasho         ###   ########.fr       */
+/*   Updated: 2018/11/06 12:58:49 by blukasho         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,12 +14,29 @@
 /*
 ** Непонятно как действовать когда искомая строка больше len
 */
-char	*ft_strnstr(const char *big, const char *little, size_t len)
+char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 {
-	if (*little == '\0')
-		return ((char *) big);
-	while (--len && *big)
-		if (ft_strncmp(big++, little, ft_strlen(little)) == 0)
-			return ((char *) --big);
+	size_t	i;
+	int		r;
+
+	i = 0;
+	r = 0;
+	if (!ft_strlen(needle))
+		return ((char *) haystack);
+	while (*haystack && len >= ft_strlen(needle))
+	{
+		while (needle[i])
+		{
+			if (needle[i] != haystack[i])
+				r = 1;
+			i++;
+		}
+		if (r == 0)
+			return ((char *) haystack);
+		len--;
+		i = 0;
+		r = 0;
+		haystack++;
+	}
 	return (NULL);
 }
