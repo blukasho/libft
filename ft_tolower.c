@@ -6,7 +6,7 @@
 /*   By: blukasho <bodik1w@gmail.com>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/04 01:59:40 by blukasho          #+#    #+#             */
-/*   Updated: 2018/11/04 02:01:52 by blukasho         ###   ########.fr       */
+/*   Updated: 2018/11/06 15:18:16 by blukasho         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,5 +16,5 @@ int		ft_tolower(int c)
 {
 	if (c >= 'A' && c <= 'Z')
 		return (c + 32);
-	return (0);
+	return (c);
 }
