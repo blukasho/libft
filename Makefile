@@ -30,7 +30,7 @@ OBJ = ft_bzero.o ft_memset.o ft_memcpy.o ft_memccpy.o ft_memmove.o \
 	  ft_strmap.o ft_strmapi.o ft_strequ.o ft_strnequ.o ft_strsub.o\
 	  ft_strjoin.o ft_strtrim.o ft_strsplit.o
 
-GCC = gcc -Wall -Wextra -Werror
+GCC = gcc -Wall -Wextra -Werror -std=c99
 
 all: makelib
 
