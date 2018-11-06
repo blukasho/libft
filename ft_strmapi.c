@@ -6,7 +6,7 @@
 /*   By: blukasho <bodik1w@gmail.com>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/04 12:44:07 by blukasho          #+#    #+#             */
-/*   Updated: 2018/11/04 12:49:25 by blukasho         ###   ########.fr       */
+/*   Updated: 2018/11/06 17:57:07 by blukasho         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,8 +18,13 @@ char	*ft_strmapi(char const *s, char (*f) (unsigned int, char))
 	char			*res;
 
 	i = -1;
-	res = ft_strnew(ft_strlen(s));
-	while (s[++i])
-		res[i] = f(i,s[i]);
-	return (res);
+	if (s && f)
+	{
+		res = ft_strnew(ft_strlen(s));
+		if (res)
+			while (s[++i])
+				res[i] = f(i,s[i]);
+		return (res);
+	}
+	return (NULL);
 }
