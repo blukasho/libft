@@ -6,7 +6,7 @@
 /*   By: blukasho <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/10/30 18:40:24 by blukasho          #+#    #+#             */
-/*   Updated: 2018/11/07 10:51:47 by blukasho         ###   ########.fr       */
+/*   Updated: 2018/11/07 12:20:24 by blukasho         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,7 @@
 #include <string.h>
 #include <stdio.h>
 
+void	ft_putchar_fd(char c, int fd);
 void	ft_putnbr(int n);
 void	ft_putendl(const char *s);
 void	ft_putstr(const char *s);
