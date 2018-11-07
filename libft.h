@@ -6,7 +6,7 @@
 /*   By: blukasho <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/10/30 18:40:24 by blukasho          #+#    #+#             */
-/*   Updated: 2018/11/05 00:30:12 by blukasho         ###   ########.fr       */
+/*   Updated: 2018/11/07 09:15:55 by blukasho         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,6 +31,7 @@ void	*ft_memccpy(void *restrict dst, const void *restrict src, int c, size_t n);
 void	*ft_memcpy(void *restrict dst, const void *restrict stc, size_t n);
 void	*ft_memset(void *b, int c, size_t len);
 
+char	*ft_itoa(int n);
 char	*ft_strtrim(char const *s1);
 char	*ft_strjoin(char const *s1, char const *s2);
 char	*ft_strsub(char const *s, unsigned int start, size_t len);
