@@ -1,51 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_itoa.c                                          :+:      :+:    :+:   */
+/*   ft_count_word.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: blukasho <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/11/07 08:46:40 by blukasho          #+#    #+#             */
-/*   Updated: 2018/11/07 16:07:41 by blukasho         ###   ########.fr       */
+/*   Created: 2018/11/07 16:10:27 by blukasho          #+#    #+#             */
+/*   Updated: 2018/11/07 16:14:06 by blukasho         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static int		count_int(int n)
+size_t	ft_count_words(char const *s, char c)
 {
-	int res;
+	size_t res;
 
 	res = 0;
-	while (n)
+	while (*s)
 	{
-		n = n / 10;
-		res++;
-	}
-	return (res);
-}
-
-char		*ft_itoa(int n)
-{
-	char	*res;
-	int		min;
-	int		len;
-
-	min = 0;
-	if (n < 0)
-		min = 1;
-	len = count_int(n) + min;
-
-	res = ft_strnew((len > 0 ? len : ++len));
-	if (res)
-	{
-		while (--len >= 0)
+		if (*s != c)
 		{
-			res[len] = (n < 0 ? -(n % 10) : (n % 10)) + '0';
-			n = n / 10;
+			while (*s != c && *s)
+				s++;
+			res++;
 		}
-		if (min)
-			res[0] = '-';
+		s++;
 	}
 	return (res);
 }

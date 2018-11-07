@@ -6,7 +6,7 @@
 /*   By: blukasho <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/10/30 18:40:24 by blukasho          #+#    #+#             */
-/*   Updated: 2018/11/07 14:14:29 by blukasho         ###   ########.fr       */
+/*   Updated: 2018/11/07 16:14:54 by blukasho         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -59,6 +59,7 @@ char	*ft_strdup(const char *s1);
 
 char	**ft_strsplit(char const *s, char c);
 
+size_t	ft_count_words(char const *s, char c);
 size_t	ft_strlcat(char *dest, const char *src, size_t size);
 size_t	ft_strlen(const char *s);
 
