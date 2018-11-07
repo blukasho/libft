@@ -1,36 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putnbr.c                                        :+:      :+:    :+:   */
+/*   ft_putendl_fd.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: blukasho <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/11/07 10:48:25 by blukasho          #+#    #+#             */
-/*   Updated: 2018/11/07 14:00:40 by blukasho         ###   ########.fr       */
+/*   Created: 2018/11/07 14:01:31 by blukasho          #+#    #+#             */
+/*   Updated: 2018/11/07 14:07:47 by blukasho         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_putnbr(int n)
+void	ft_putendl_fd(const char *s, int fd)
 {
-	if (n == -2147483648)
-		ft_putstr("-2147483648");
-	else if (n == 2147483647)
-		ft_putstr("2147483647");
-	else
+	if (s)
 	{
-		if (n < 0)
-		{
-			ft_putchar('-');
-			n = -n;
-		}
-		if (n > 10)
-		{
-			ft_putnbr(n / 10);
-			ft_putchar((n % 10) + 48);
-		}
-		else
-			ft_putchar((n % 10) + 48);
+		ft_putstr_fd(s, fd);
+		ft_putchar_fd('\n', fd);
 	}
 }
