@@ -6,15 +6,15 @@
 /*   By: blukasho <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/07 08:46:40 by blukasho          #+#    #+#             */
-/*   Updated: 2018/11/07 16:07:41 by blukasho         ###   ########.fr       */
+/*   Updated: 2018/11/07 17:33:16 by blukasho         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static int		count_int(int n)
+static int	count_int(int n)
 {
-	int res;
+	int		res;
 
 	res = 0;
 	while (n)
@@ -35,7 +35,6 @@ char		*ft_itoa(int n)
 	if (n < 0)
 		min = 1;
 	len = count_int(n) + min;
-
 	res = ft_strnew((len > 0 ? len : ++len));
 	if (res)
 	{

@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strsplit.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: blukasho <bodik1w@gmail.com>               +#+  +:+       +#+        */
+/*   By: blukasho <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/11/04 23:57:15 by blukasho          #+#    #+#             */
-/*   Updated: 2018/11/07 16:16:41 by blukasho         ###   ########.fr       */
+/*   Created: 2018/11/07 16:54:26 by blukasho          #+#    #+#             */
+/*   Updated: 2018/11/07 17:32:26 by blukasho         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static	char	*word_cp(char const *s, char c)
+static char	*word_cp(char const *s, char c)
 {
 	size_t	i;
 	char	*res;
@@ -31,10 +31,10 @@ static	char	*word_cp(char const *s, char c)
 		}
 		return (res);
 	}
-	return (NULL);
+	return (res);
 }
 
-char	**ft_strsplit(char const *s, char c)
+char		**ft_strsplit(char const *s, char c)
 {
 	size_t	i;
 	char	**res;

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strjoin.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: blukasho <bodik1w@gmail.com>               +#+  +:+       +#+        */
+/*   By: blukasho <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/11/04 15:55:21 by blukasho          #+#    #+#             */
-/*   Updated: 2018/11/06 18:07:46 by blukasho         ###   ########.fr       */
+/*   Created: 2018/11/07 16:57:07 by blukasho          #+#    #+#             */
+/*   Updated: 2018/11/07 16:57:44 by blukasho         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 char	*ft_strjoin(char const *s1, char const *s2)
 {
-	size_t i;
-	char *res;
+	size_t	i;
+	char	*res;
 
 	res = NULL;
 	i = -1;

@@ -6,7 +6,7 @@
 /*   By: blukasho <bodik1w@gmail.com>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/04 12:17:45 by blukasho          #+#    #+#             */
-/*   Updated: 2018/11/06 17:25:01 by blukasho         ###   ########.fr       */
+/*   Updated: 2018/11/07 16:55:54 by blukasho         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ char	*ft_strmap(char const *s, char (*f) (char))
 	if (s && f)
 	{
 		str = ft_strnew(ft_strlen(s));
-		if(str)
+		if (str)
 		{
 			res = str;
 			while (*s)

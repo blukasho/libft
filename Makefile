@@ -38,9 +38,9 @@ GCC = gcc -Wall -Wextra -Werror -std=c99
 
 NAME = libft.a
 
-all: makelib
+all: $(NAME)
 
-makelib:
+$(NAME):
 	$(GCC) -c $(SRCS)
 	ar -rv $(NAME) $(OBJ)
 	ranlib $(NAME)

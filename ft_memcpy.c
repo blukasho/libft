@@ -6,7 +6,7 @@
 /*   By: blukasho <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/10/31 11:55:28 by blukasho          #+#    #+#             */
-/*   Updated: 2018/10/31 14:43:28 by blukasho         ###   ########.fr       */
+/*   Updated: 2018/11/07 17:03:17 by blukasho         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,8 +18,8 @@ void	*ft_memcpy(void *restrict dst, const void *restrict src, size_t n)
 	char	*sr;
 	char	*ds;
 
-	sr = (char *) src;
-	ds = (char *) dst;
+	sr = (char *)src;
+	ds = (char *)dst;
 	i = -1;
 	while (++i < n)
 		ds[i] = sr[i];
