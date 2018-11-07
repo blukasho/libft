@@ -19,7 +19,7 @@ SRCS = ft_bzero.c ft_memcpy.c ft_memset.c ft_memccpy.c ft_memmove.c \
 	   ft_strnew.c ft_strdel.c ft_strclr.c ft_striter.c ft_striteri.c\
 	   ft_strmap.c ft_strmapi.c ft_strequ.c ft_strnequ.c ft_strsub.c\
 	   ft_strjoin.c ft_strtrim.c ft_strsplit.c ft_itoa.c ft_putchar.c\
-	   ft_putstr.c ft_putendl.c
+	   ft_putstr.c ft_putendl.c ft_putnbr.c
 
 OBJ = ft_bzero.o ft_memset.o ft_memcpy.o ft_memccpy.o ft_memmove.o \
 	  ft_memchr.o ft_memcmp.o ft_strlen.o ft_strdup.o ft_strcpy.o \
@@ -30,11 +30,12 @@ OBJ = ft_bzero.o ft_memset.o ft_memcpy.o ft_memccpy.o ft_memmove.o \
 	  ft_strnew.o ft_strdel.o ft_strclr.o ft_striter.o ft_striteri.o\
 	  ft_strmap.o ft_strmapi.o ft_strequ.o ft_strnequ.o ft_strsub.o\
 	  ft_strjoin.o ft_strtrim.o ft_strsplit.o ft_itoa.o ft_putchar.o\
-	  ft_putstr.o ft_putendl.o
+	  ft_putstr.o ft_putendl.o ft_putnbr.o
 
 GCC = gcc -Wall -Wextra -Werror -std=c99
 
 NAME = libft.a
+
 all: makelib
 
 makelib:
