@@ -6,7 +6,7 @@
 /*   By: blukasho <bodik1w@gmail.com>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/04 17:18:41 by blukasho          #+#    #+#             */
-/*   Updated: 2018/11/06 18:55:35 by blukasho         ###   ########.fr       */
+/*   Updated: 2018/11/07 13:51:16 by blukasho         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ char	*ft_strtrim(char const *s)
 			++beg;
 		res = ft_strnew(len - beg);
 		if (len == 0)
-			return ("\0");
+			return (ft_strdup("\0"));
 		if (res)
 		{
 			while (len-- > beg)
