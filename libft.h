@@ -6,7 +6,7 @@
 /*   By: blukasho <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/10/30 18:40:24 by blukasho          #+#    #+#             */
-/*   Updated: 2018/11/07 10:19:03 by blukasho         ###   ########.fr       */
+/*   Updated: 2018/11/07 10:23:54 by blukasho         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,7 @@
 #include <string.h>
 #include <stdio.h>
 
+void	ft_putstr(const char *s);
 void	ft_putchar(char c);
 void	ft_striteri(char *s, void (*f) (unsigned int, char *));
 void	ft_striter(char *s, void (*f) (char *));
