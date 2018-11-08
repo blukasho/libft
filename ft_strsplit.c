@@ -6,7 +6,7 @@
 /*   By: blukasho <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/07 16:54:26 by blukasho          #+#    #+#             */
-/*   Updated: 2018/11/07 17:32:26 by blukasho         ###   ########.fr       */
+/*   Updated: 2018/11/08 12:19:20 by blukasho         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,9 +42,8 @@ char		**ft_strsplit(char const *s, char c)
 	if (s)
 	{
 		i = ft_count_words(s, c);
-		res = (char **)malloc(i * sizeof(char *));
-		i = 0;
-		if (res)
+		res = (char **)malloc(++i * sizeof(char *));
+		if (res && !(i = 0))
 		{
 			while (*s)
 			{
@@ -57,6 +56,7 @@ char		**ft_strsplit(char const *s, char c)
 				}
 				s++;
 			}
+			res[i] = NULL;
 			return (res);
 		}
 	}
