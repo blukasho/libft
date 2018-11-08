@@ -6,7 +6,7 @@
 /*   By: blukasho <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/10/30 18:40:24 by blukasho          #+#    #+#             */
-/*   Updated: 2018/11/07 19:58:11 by blukasho         ###   ########.fr       */
+/*   Updated: 2018/11/08 08:08:56 by blukasho         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,6 +23,7 @@ typedef struct		s_list
 	struct s_list	*next;
 }					t_list;
 
+void				ft_lstdel(t_list **alst, void (*del) (void *, size_t));
 void				ft_lstdelone(t_list **alst, void (*del) (void *, size_t));
 void				ft_putnbr_fd(int n, int fd);
 void				ft_putendl_fd(const char *s, int fd);
