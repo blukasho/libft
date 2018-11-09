@@ -1,20 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isprint.c                                       :+:      :+:    :+:   */
+/*   ft_strndup.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: blukasho <bodik1w@gmail.com>               +#+  +:+       +#+        */
+/*   By: blukasho <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/11/04 01:48:46 by blukasho          #+#    #+#             */
-/*   Updated: 2018/11/09 14:57:02 by blukasho         ###   ########.fr       */
+/*   Created: 2018/11/09 17:49:32 by blukasho          #+#    #+#             */
+/*   Updated: 2018/11/09 18:34:02 by blukasho         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int		ft_isprint(int c)
+char	*ft_strndup(const char *s1, size_t n)
 {
-	if (c >= 32 && c <= 126)
-		return (1);
-	return (0);
+	char	*res;
+	size_t	i;
+
+	i = 0;
+	res = ft_strnew(n);
+	if (res)
+		while (i < n)
+		{
+			res[i] = s1[i];
+			i++;
+		}
+	return (res);
 }

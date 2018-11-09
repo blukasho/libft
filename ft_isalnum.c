@@ -6,7 +6,7 @@
 /*   By: blukasho <bodik1w@gmail.com>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/04 01:19:51 by blukasho          #+#    #+#             */
-/*   Updated: 2018/11/04 01:28:23 by blukasho         ###   ########.fr       */
+/*   Updated: 2018/11/09 14:56:04 by blukasho         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,6 @@
 int		ft_isalnum(int c)
 {
 	if (ft_isalpha(c) || ft_isdigit(c))
-		return (8);
+		return (1);
 	return (0);
 }
