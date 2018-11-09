@@ -6,7 +6,7 @@
 /*   By: blukasho <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/10/30 18:40:24 by blukasho          #+#    #+#             */
-/*   Updated: 2018/11/09 18:59:43 by blukasho         ###   ########.fr       */
+/*   Updated: 2018/11/09 20:16:19 by blukasho         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -72,6 +72,9 @@ t_list				*ft_lstnew(void const *content, size_t content_size);
 size_t				ft_count_words(char const *s, char c);
 size_t				ft_strlcat(char *dest, const char *src, size_t dstsize);
 size_t				ft_strlen(const char *s);
+int					ft_is_space(int i);
+int					ft_is_lower(int i);
+int					ft_is_upper(int i);
 int					ft_strnequ(char const *s1, char const *s2, size_t n);
 int					ft_strequ(char const *s1, char const *s2);
 int					ft_tolower(int c);
