@@ -6,11 +6,9 @@
 /*   By: blukasho <bodik1w@gmail.com>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/02 16:18:59 by blukasho          #+#    #+#             */
-/*   Updated: 2018/11/09 12:05:29 by blukasho         ###   ########.fr       */
+/*   Updated: 2018/12/14 12:22:29 by blukasho         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include "libft.h"
 
 size_t			ft_strlcat(char *dst, const char *src, size_t destsize)
 {

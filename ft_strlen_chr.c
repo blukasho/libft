@@ -1,24 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strsub.c                                        :+:      :+:    :+:   */
+/*   ft_strlen_chr.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: blukasho <bodik1w@gmail.com>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/11/04 14:53:53 by blukasho          #+#    #+#             */
-/*   Updated: 2018/12/14 12:22:29 by blukasho         ###   ########.fr       */
+/*   Created: 2018/11/14 13:56:28 by blukasho          #+#    #+#             */
+/*   Updated: 2018/12/14 12:38:07 by blukasho         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char	*ft_strsub(char const *s, unsigned int start, size_t len)
+size_t			ft_strlen_chr(const char *s, const char c)
 {
-	char	*res;
-	size_t	i;
+	const char	*tmp;
 
-	i = -1;
-	res = ft_strnew(len);
-	if (res && s)
-		while (++i < len)
-			res[i] = s[start++];
-	return (res);
+	tmp = s;
+	if (s)
+		while (*s && *s != c)
+			++s;
+	return (s - tmp);
 }

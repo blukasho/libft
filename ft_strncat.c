@@ -6,11 +6,9 @@
 /*   By: blukasho <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/07 16:49:04 by blukasho          #+#    #+#             */
-/*   Updated: 2018/11/07 16:49:12 by blukasho         ###   ########.fr       */
+/*   Updated: 2018/12/14 12:22:29 by blukasho         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include "libft.h"
 
 char	*ft_strncat(char *dest, const char *src, size_t n)
 {

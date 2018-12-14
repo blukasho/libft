@@ -6,11 +6,9 @@
 /*   By: blukasho <bodik1w@gmail.com>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/03 15:16:17 by blukasho          #+#    #+#             */
-/*   Updated: 2018/11/09 12:51:33 by blukasho         ###   ########.fr       */
+/*   Updated: 2018/12/14 12:22:29 by blukasho         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include "libft.h"
 
 int		ft_strncmp(const char *s1, const char *s2, size_t n)
 {

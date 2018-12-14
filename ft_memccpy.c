@@ -6,14 +6,12 @@
 /*   By: blukasho <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/10/31 15:07:27 by blukasho          #+#    #+#             */
-/*   Updated: 2018/11/07 17:35:20 by blukasho         ###   ########.fr       */
+/*   Updated: 2018/12/14 12:22:28 by blukasho         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
-
-void	*ft_memccpy(void *restrict dst,
-					const void *restrict src, int c, size_t n)
+void	*ft_memccpy(void *dst,
+					const void *src, int c, size_t n)
 {
 	unsigned char	*ds;
 	unsigned char	*sr;

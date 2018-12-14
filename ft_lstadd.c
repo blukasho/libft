@@ -6,11 +6,9 @@
 /*   By: blukasho <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/08 08:23:26 by blukasho          #+#    #+#             */
-/*   Updated: 2018/11/08 10:18:01 by blukasho         ###   ########.fr       */
+/*   Updated: 2018/12/14 12:22:28 by blukasho         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include "libft.h"
 
 void	ft_lstadd(t_list **alst, t_list *new)
 {

@@ -6,11 +6,9 @@
 /*   By: blukasho <bodik1w@gmail.com>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/04 01:48:46 by blukasho          #+#    #+#             */
-/*   Updated: 2018/11/09 14:57:02 by blukasho         ###   ########.fr       */
+/*   Updated: 2018/12/14 12:22:28 by blukasho         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include "libft.h"
 
 int		ft_isprint(int c)
 {

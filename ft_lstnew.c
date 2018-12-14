@@ -6,11 +6,9 @@
 /*   By: blukasho <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/07 18:33:21 by blukasho          #+#    #+#             */
-/*   Updated: 2018/11/08 10:45:01 by blukasho         ###   ########.fr       */
+/*   Updated: 2018/12/14 12:22:28 by blukasho         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include "libft.h"
 
 t_list		*ft_lstnew(void const *content, size_t content_size)
 {

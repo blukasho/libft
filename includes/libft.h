@@ -6,15 +6,23 @@
 /*   By: blukasho <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/10/30 18:40:24 by blukasho          #+#    #+#             */
-/*   Updated: 2018/11/09 20:16:19 by blukasho         ###   ########.fr       */
+/*   Updated: 2018/12/14 12:37:50 by blukasho         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
+# define GNL_BUFF_SIZE 42
 # include <unistd.h>
 # include <stdlib.h>
 # include <string.h>
+
+typedef struct		s_lst
+{
+	char			*str;
+	int				fd;
+	struct s_lst	*next;
+}					t_lst;
 
 typedef struct		s_list
 {
@@ -69,9 +77,11 @@ char				**ft_get_arr(size_t x, size_t y);
 char				**ft_strsplit(char const *s, char c);
 t_list				*ft_lstmap(t_list *lst, t_list *(*f) (t_list *elem));
 t_list				*ft_lstnew(void const *content, size_t content_size);
+size_t				ft_strlen_chr(const char *s, const char c);
 size_t				ft_count_words(char const *s, char c);
 size_t				ft_strlcat(char *dest, const char *src, size_t dstsize);
 size_t				ft_strlen(const char *s);
+int					get_next_line(const int fd, char **line);
 int					ft_is_space(int i);
 int					ft_is_lower(int i);
 int					ft_is_upper(int i);

@@ -6,11 +6,9 @@
 /*   By: blukasho <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/10/31 17:26:45 by blukasho          #+#    #+#             */
-/*   Updated: 2018/11/07 17:02:51 by blukasho         ###   ########.fr       */
+/*   Updated: 2018/12/14 12:22:28 by blukasho         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include "libft.h"
 
 void	*ft_memchr(const void *s, int c, size_t n)
 {

@@ -6,11 +6,9 @@
 /*   By: blukasho <bodik1w@gmail.com>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/04 01:54:07 by blukasho          #+#    #+#             */
-/*   Updated: 2018/11/04 02:02:47 by blukasho         ###   ########.fr       */
+/*   Updated: 2018/12/14 12:58:30 by blukasho         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include "libft.h"
 
 int		ft_toupper(int c)
 {
