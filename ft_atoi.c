@@ -6,9 +6,11 @@
 /*   By: blukasho <bodik1w@gmail.com>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/03 22:42:02 by blukasho          #+#    #+#             */
-/*   Updated: 2018/12/14 12:22:28 by blukasho         ###   ########.fr       */
+/*   Updated: 2019/01/11 18:18:07 by blukasho         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "includes/libft.h"
 
 static const char	*check_sign(const char *str, int *min)
 {

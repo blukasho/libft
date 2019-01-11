@@ -6,7 +6,7 @@
 #    By: blukasho <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/10/31 12:56:17 by blukasho          #+#    #+#              #
-#*   Updated: 2018/11/05 00:29:17 by blukasho         ###   ########.fr       *#
+#*   Updated: 2019/01/11 18:18:59 by blukasho         ###   ########.fr       *#
 #                                                                              #
 # **************************************************************************** #
 
@@ -27,7 +27,7 @@ SRCS = ft_bzero.c ft_memcpy.c ft_memset.c ft_memccpy.c ft_memmove.c \
 
 OBJ = $(SRCS:.c=.o)
 
-FLAGS = -Wall -Wextra -Werror -include includes/libft.h
+FLAGS = -Wall -Wextra -Werror -I includes
 
 NAME = libft.a
 

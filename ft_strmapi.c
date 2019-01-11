@@ -6,9 +6,11 @@
 /*   By: blukasho <bodik1w@gmail.com>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/04 12:44:07 by blukasho          #+#    #+#             */
-/*   Updated: 2018/12/14 12:22:29 by blukasho         ###   ########.fr       */
+/*   Updated: 2019/01/11 18:18:12 by blukasho         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "includes/libft.h"
 
 char	*ft_strmapi(char const *s, char (*f) (unsigned int, char))
 {

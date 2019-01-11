@@ -6,9 +6,11 @@
 /*   By: blukasho <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/07 16:49:38 by blukasho          #+#    #+#             */
-/*   Updated: 2018/12/14 12:22:29 by blukasho         ###   ########.fr       */
+/*   Updated: 2019/01/11 18:18:14 by blukasho         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "includes/libft.h"
 
 char	*ft_strncpy(char *dest, const char *src, size_t n)
 {

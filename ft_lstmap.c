@@ -6,9 +6,11 @@
 /*   By: blukasho <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/08 09:45:10 by blukasho          #+#    #+#             */
-/*   Updated: 2018/12/14 12:22:28 by blukasho         ###   ########.fr       */
+/*   Updated: 2019/01/11 18:18:09 by blukasho         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "includes/libft.h"
 
 t_list		*ft_lstmap(t_list *lst, t_list *(*f) (t_list *elem))
 {

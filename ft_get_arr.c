@@ -6,9 +6,11 @@
 /*   By: blukasho <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/09 18:50:10 by blukasho          #+#    #+#             */
-/*   Updated: 2018/12/14 12:22:28 by blukasho         ###   ########.fr       */
+/*   Updated: 2019/01/11 18:18:07 by blukasho         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "includes/libft.h"
 
 char		**ft_get_arr(size_t x, size_t y)
 {
